@@ -115,8 +115,3 @@ npm run dev
     *   **Green Rows**: Normal cases.
     *   *Dashboard auto-refreshes every 5 seconds.*
 
----
-
-## 🛡️ License
-
-This project is open-source and available under the MIT License.
