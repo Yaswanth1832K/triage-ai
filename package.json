@@ -1,6 +1,7 @@
 {
     "name": "triage-ai-root",
     "version": "1.0.0",
+    "homepage": "https://triage-ai-tawny.vercel.app/",
     "description": "Unified runner for TRIAGE.AI",
     "scripts": {
         "dev:backend": "npm run dev --prefix backend",
