@@ -88,8 +88,9 @@ const PatientPage = () => {
             const response = await axiosInstance.post('/triage', { symptoms });
             setResult(response.data);
         } catch (err) {
-            setError('System encountered an analysis error. Please re-state symptoms.');
-            console.error(err);
+            const errorMessage = err.response?.data?.message || err.message || 'System encountered an analysis error.';
+            setError(`Error: ${errorMessage}. Please check if the API URL is configured correctly.`);
+            console.error('Triage submission error:', err);
         } finally {
             setLoading(false);
         }
